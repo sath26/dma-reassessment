@@ -18,8 +18,7 @@ limitations under the License. -->
 Want to minimize unrelated busy work where students just remove code.
 So, we are leaving the template code in. -->
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -41,8 +40,8 @@ So, we are leaving the template code in. -->
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
-<com.google.android.material.floatingactionbutton.FloatingActionButton
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

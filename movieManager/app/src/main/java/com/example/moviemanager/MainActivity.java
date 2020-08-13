@@ -1,6 +1,7 @@
 package com.example.moviemanager;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -23,11 +24,18 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         Toolbar toolbar;
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-       setSupportActionBar(toolbar);
-        setContentView(R.layout.activity_main);
+        setSupportActionBar(toolbar);
+
+        ActionBar ab = getSupportActionBar();
+        if (ab !=null) {
+            ab.setDisplayHomeAsUpEnabled(true);
+            ab.setDisplayShowHomeEnabled(true);
+            // ab.setHomeAsUpIndicator(android.R.drawable.btn_minus);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -75,12 +83,11 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
     private void showFragment(Class fragmentClass) {
 
         Fragment fragment = null;
         try {
-            fragment = (Fragment)fragmentClass.newInstance();
+            fragment = (Fragment) fragmentClass.newInstance();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
@@ -92,6 +99,7 @@ public class MainActivity extends AppCompatActivity
                 .replace(R.id.flContent, fragment).commit();
 
     }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
