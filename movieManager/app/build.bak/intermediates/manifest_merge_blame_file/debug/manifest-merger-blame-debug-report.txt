@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.moviemanager"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\dma-reassessment\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\dma-reassessment\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:6:5-30:19
+12        android:allowBackup="true"
+12-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.3.0] C:\Users\XPS\.gradle\caches\transforms-2\files-2.1\429fb715fcc7711d4ab133e350b6f531\core-1.3.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:8:9-43
+16        android:label="@string/app_name"
+16-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:9:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:10:9-54
+18        android:supportsRtl="true"
+18-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:11:9-35
+19        android:theme="@style/AppTheme" >
+19-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:12:9-40
+20        <activity
+20-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:13:9-22:20
+21            android:name="com.example.moviemanager.NewMovieDetailActivity"
+21-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:14:13-51
+22            android:label="@string/title_activity_movie_detail"
+22-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:15:13-64
+23            android:parentActivityName="com.example.moviemanager.MainActivity"
+23-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:16:13-55
+24            android:theme="@style/AppTheme.NoActionBar" >
+24-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:17:13-56
+25            <meta-data
+25-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:19:13-21:73
+26                android:name="android.support.PARENT_ACTIVITY"
+26-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:20:17-63
+27                android:value="com.example.moviemanager.MainActivity" />
+27-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:21:17-70
+28        </activity>
+29        <activity android:name="com.example.moviemanager.MainActivity" >
+29-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:23:9-29:20
+29-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:23:19-47
+30            <intent-filter>
+30-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:24:13-28:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:25:17-69
+31-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:25:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:27:17-77
+33-->D:\dma-reassessment\app\src\main\AndroidManifest.xml:27:27-74
+34            </intent-filter>
+35        </activity>
+36
+37        <provider
+37-->[com.squareup.picasso:picasso:2.71828] C:\Users\XPS\.gradle\caches\transforms-2\files-2.1\37e08bf964a071c9eec13266af2de2e7\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+38            android:name="com.squareup.picasso.PicassoProvider"
+38-->[com.squareup.picasso:picasso:2.71828] C:\Users\XPS\.gradle\caches\transforms-2\files-2.1\37e08bf964a071c9eec13266af2de2e7\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+39            android:authorities="com.example.moviemanager.com.squareup.picasso"
+39-->[com.squareup.picasso:picasso:2.71828] C:\Users\XPS\.gradle\caches\transforms-2\files-2.1\37e08bf964a071c9eec13266af2de2e7\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+40            android:exported="false" />
+40-->[com.squareup.picasso:picasso:2.71828] C:\Users\XPS\.gradle\caches\transforms-2\files-2.1\37e08bf964a071c9eec13266af2de2e7\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+41    </application>
+42
+43</manifest>
