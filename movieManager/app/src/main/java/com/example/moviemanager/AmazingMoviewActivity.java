@@ -19,7 +19,7 @@ public class AmazingMoviewActivity extends AppCompatActivity {
     private ImageView ivImageViewBackdrop;
     private TextView tvOverView;
     private Movie movie;
- 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

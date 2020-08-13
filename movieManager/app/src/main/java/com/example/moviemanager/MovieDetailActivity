@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.moviemanager.model.Movie;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material. floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.squareup.picasso.Picasso;
 
